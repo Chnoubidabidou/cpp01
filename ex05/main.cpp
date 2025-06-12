@@ -6,7 +6,7 @@
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 19:02:49 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/06/12 14:03:35 by lgrisel          ###   ########.fr       */
+/*   Updated: 2025/06/12 14:17:43 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ int	main()
 	harl.complain("DEBUG");
 	harl.complain("INFO");
 	harl.complain("WARNING");
-	harl.complain("ERROR");
+	harl.complain("ERRORsss");
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 19:02:50 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/06/12 14:09:30 by lgrisel          ###   ########.fr       */
+/*   Updated: 2025/06/12 14:17:39 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,8 @@ void	Harl::complain(std::string level)
 		if (levels[i] == level)
 		{
 			(this->*ptr_complain[i])();
-			break ;
+			return ;
 		}
 	}
+	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }
