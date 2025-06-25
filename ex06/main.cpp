@@ -6,13 +6,13 @@
 /*   By: lgrisel <lgrisel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 19:02:49 by lgrisel           #+#    #+#             */
-/*   Updated: 2025/06/12 14:29:02 by lgrisel          ###   ########.fr       */
+/*   Updated: 2025/06/25 12:57:53 by lgrisel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int	karen_translate(char *argv)
+int	harl_translate(char *argv)
 {
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
@@ -22,9 +22,9 @@ int	karen_translate(char *argv)
 	return (-1);
 }
 
-void	karen_switch(char *argv, Harl &h)
+void	harl_switch(char *argv, Harl &h)
 {
-	switch (karen_translate(argv))
+	switch (harl_translate(argv))
 	{
 		case 0:
 			h.complain("DEBUG");
@@ -47,6 +47,6 @@ int	main(int argc, char **argv)
 	if (argc != 2)
 		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	else
-		karen_switch(argv[1], h);
+		harl_switch(argv[1], h);
 	return (0);
 }
